@@ -6,19 +6,23 @@ Yamazaki wood: #F8DEB7
 
 Sacred Heart/Virgen de Gudalupe Stickers: teal: 559893, red: CB1117, orange: F18E00, pink: EDC8D0
 
-text: 09489F
+text: 28282a - black
 pink: f8ecf8
 visited teal: 077878
+primary link color: 09489F - blue 
+green: 2e8540
 
 */
 
 :root {
-    --primary-link-color: #09489F;
     --primary-color: #f8ecf8;
-    --visited-link-color: #077878;
-    --active-link-color: #2e8540;
     --bg-color: #fff;
     --primary-text-color: #28282a;
+
+    --primary-link-color: #09489F;
+    --visited-link-color: #077878;
+    --active-link-color: #2e8540;
+    
     --font-weight-bold: bold;
     --font-weight-primary: 400;
     --align-center: center;
@@ -45,9 +49,15 @@ body {
     
 }
 
-.index-html, .about-html {
-    background-color: var(--primary-color);
+/* To fix the re-sisizing issues of footer vs page
+#index-html, #about-html, #contact-html, #work-html {
+    position: absolute;
+    min-height: 100vh;
 }
+#profile, #about-me, #project-list, #contact {
+    padding-bottom: 2.5rem;
+} */
+
 
 * {
     box-sizing: border-box;
