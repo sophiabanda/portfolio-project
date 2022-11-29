@@ -1,0 +1,602 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+INSPO COLORS FOR SITE:
+
+Mac Silver: #DFE0E2
+Yamazaki wood: #F8DEB7
+
+Sacred Heart/Virgen de Gudalupe Stickers: teal: 559893, red: CB1117, orange: F18E00, pink: EDC8D0
+
+text: 09489F
+pink: f8ecf8
+visited teal: 077878
+
+*/
+
+/*  TO USE THE ABOVE 
+Declare variable as value, ex:
+
+a {
+    color: var(--primary-color);
+}    
+
+*/
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-variant: small-caps;
+    color: #28282a;
+    line-height: 20px;
+    
+}
+
+.index-html {
+    background-color: #f8ecf8;
+}
+
+.about-html {
+    background-color: #f8ecf8;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+} 
+
+a {
+    text-decoration: none;
+    color: #09489F;
+}
+
+a:visited {
+    color: #077878;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active {
+    color: #2e8540;
+}
+
+ul {
+    list-style-type: none;
+} 
+
+/* HEADER */
+
+.page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+}
+
+/* BODY CONTENT */
+
+.main-profile {
+    -webkit-transform: translate(0%, 50%);
+        -ms-transform: translate(0%, 50%);
+            transform: translate(0%, 50%);
+}
+
+.profile__portrait {
+    float: left;
+    height: 200px;
+    border-radius: 50% 50%;  
+    margin: 0 25px 50px 0;
+
+}
+
+
+.profile {
+    max-width: 700px;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    margin: auto;
+    margin-bottom: 35%;
+    padding: 50px 50px 100px;
+    background-color: #fff;
+    -webkit-box-shadow: 5px 10px 18px #888888;
+            box-shadow: 5px 10px 18px #888888;
+}
+
+.bio-info {
+    text-align: center;
+    background-color: #fff;
+    -webkit-box-shadow: 5px 10px 18px #888888;
+            box-shadow: 5px 10px 18px #888888;
+    padding: 10px;
+    width: 50%;
+    margin: 5% auto;
+}
+
+.project-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 30px;
+    margin-bottom: 10%
+}
+
+.project-list__item {
+    background-color: #f8ecf8;
+    -webkit-box-shadow: 5px 10px 18px #888888;
+            box-shadow: 5px 10px 18px #888888;
+    padding: 10px;
+
+}
+
+.project-list__item:nth-child(2) {
+    -ms-grid-column: 2;
+        grid-column-start: 2; 
+    -ms-grid-column-span: 0; 
+    grid-column-end: 2;
+    /* can be written shorthand like: grid-column 2/2 */
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-row-span: 3;
+    grid-row-end: 4;
+    /* can be written shorthand like: grid-row 1/4 */
+}
+
+
+.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: 4em 4em;
+}
+
+#contact-form {
+    background-color: #f8ecf8;
+    -webkit-box-shadow: 5px 10px 18px #888888;
+            box-shadow: 5px 10px 18px #888888;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+}
+
+input, textarea, label {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 35%;
+}
+
+
+/* ANIMATIONS */
+@-webkit-keyframes city-spin {
+    from {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+@keyframes city-spin {
+    from {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+
+.one-way-sign {
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: city-spin;
+            animation-name: city-spin;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+@-webkit-keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
+
+@keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
+
+  .sun {
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-name: color-change;
+            animation-name: color-change;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+
+  @-webkit-keyframes m-move {
+    from {
+        -webkit-transform: scale(1.1, 1);
+                transform: scale(1.1, 1);
+    }
+  }
+
+  @keyframes m-move {
+    from {
+        -webkit-transform: scale(1.1, 1);
+                transform: scale(1.1, 1);
+    }
+  }
+
+  .m-miami {
+    -webkit-animation: 1s m-move infinite alternate linear;
+            animation: 1s m-move infinite alternate linear;
+  }
+
+@-webkit-keyframes boat-move {
+    from {
+        -webkit-transform: translate(50px, 0);
+                transform: translate(50px, 0);
+    }
+    to {
+        -webkit-transform: translate(-50px, 0);
+                transform: translate(-50px, 0)
+    }
+}
+
+@keyframes boat-move {
+    from {
+        -webkit-transform: translate(50px, 0);
+                transform: translate(50px, 0);
+    }
+    to {
+        -webkit-transform: translate(-50px, 0);
+                transform: translate(-50px, 0)
+    }
+}
+
+.boat {
+    -webkit-animation: 15s boat-move infinite alternate linear;
+            animation: 15s boat-move infinite alternate linear;
+}
+
+
+
+@-webkit-keyframes cloud-move {
+    from {
+        -webkit-transform: scale(2, 0);
+                transform: scale(2, 0)
+    }
+  
+}
+
+
+
+@keyframes cloud-move {
+    from {
+        -webkit-transform: scale(2, 0);
+                transform: scale(2, 0)
+    }
+  
+}
+
+
+.cloud-front {
+    -webkit-animation: 30s cloud-move infinite alternate linear;
+            animation: 30s cloud-move infinite alternate linear;
+}
+
+
+#where-from {
+ width: 70%;
+}
+
+.where-lived {
+    text-align: center;
+    background-color: #fff;
+    -webkit-box-shadow: 5px 10px 18px #888888;
+            box-shadow: 5px 10px 18px #888888;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+    from {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+    }
+    to {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+    }
+    to {
+        -webkit-transform: scale(2, 1);
+                transform: scale(2, 1);
+    }
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+    }
+    to {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+    }
+    to {
+        -webkit-transform: scale(2, 1);
+                transform: scale(2, 1);
+    }
+}
+
+.cloud-back {
+    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+            animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+.about-me {
+    text-align: center;
+}
+
+
+.work-page {
+    text-align: center;
+}
+
+
+/* FOOTER */
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+    background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    font-weight: bold;
+}
+
+.contact-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(248, 236, 248, 1)), to(rgba(255, 255, 255, 0)));
+    background-image: -o-linear-gradient(bottom, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to top, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0));
+    font-weight: bold;
+}
+
+
+/* BUTTONS */
+
+#resume-button {
+    border: none;
+    font-family: inherit;
+    background-color: #09489F;
+    color: white;
+    /* When I try to use a variable for color above, it's overriden by the black text of the body block */
+    font-variant:small-caps;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    /* transition-duration: 0.9s;
+    transition-property: opacity; *** CAN BE WRITTEN AS: */ 
+    -webkit-transition: 0.2 opacity; 
+    -o-transition: 0.2 opacity; 
+    transition: 0.2 opacity;
+}
+
+.message-submit-button {
+    border: none;
+    font-family: inherit;
+    background-color: #09489F;
+    color: white;
+    /* When I try to use a variable for color above, it's overriden by the black text of the body block */
+    font-variant:small-caps;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    /* transition-duration: 0.9s;
+    transition-property: opacity; *** CAN BE WRITTEN AS: */ 
+    -webkit-transition: 0.2 opacity; 
+    -o-transition: 0.2 opacity; 
+    transition: 0.2 opacity;
+}
+
+#resume-button:hover, .resume-button:focus,
+.message-submit-button:hover, .message-submit-button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+ 
+    /* box-shadow: 12px 12px 2px 1px rgba(232, 157, 232, 0.2); */
+}
+
+#resume-button:active {
+    background-color: #2e8540;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translateZ(4px);
+            transform: translateZ(4px);
+  }
+
+.message-submit-button:active {
+    background-color: #2e8540;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translateZ(4px);
+            transform: translateZ(4px);
+  }
+
+#resume-button {
+    margin: auto;
+}
+
+/* LOGO */
+#logo {
+    height: 80px;
+}
+
+/* MEDIA SIZING */
+
+@media all and (max-width: 750px) {
+    .project-list {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .project-list {
+        grid-gap: 10px;
+    }
+    
+    .project-list:last-child {
+        grid-column: auto/auto;
+        grid-row: auto/auto;
+    }
+
+    .project-list__item:nth-child(2) {
+        display: none;
+    }
+
+    .main-profile {
+        margin: 8%; 
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .profile__portrait {
+        float: none;
+    }    
+
+    h1 {
+        font-size: 22px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+}
+
+/* In the future!! :
+
+1. Design for the smallest screen first, and
+2. Build in most og CSS possible beofre adding fun flex and grid. 
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
