@@ -1,11 +1,4 @@
 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
 INSPO COLORS FOR SITE:
 
 Mac Silver: #DFE0E2
@@ -13,9 +6,11 @@ Yamazaki wood: #F8DEB7
 
 Sacred Heart/Virgen de Gudalupe Stickers: teal: 559893, red: CB1117, orange: F18E00, pink: EDC8D0
 
-text: 09489F
+text: 28282a - black
 pink: f8ecf8
 visited teal: 077878
+primary link color: 09489F - blue 
+green: 2e8540
 
 */
 
@@ -39,17 +34,18 @@ body {
     
 }
 
-.index-html {
-    background-color: #f8ecf8;
+/* To fix the re-sisizing issues of footer vs page
+#index-html, #about-html, #contact-html, #work-html {
+    position: absolute;
+    min-height: 100vh;
 }
+#profile, #about-me, #project-list, #contact {
+    padding-bottom: 2.5rem;
+} */
 
-.about-html {
-    background-color: #f8ecf8;
-}
 
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 } 
 
 a {
@@ -77,8 +73,6 @@ ul {
 /* HEADER */
 
 .page-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding: 20px;
@@ -90,24 +84,18 @@ ul {
 }
 
 .page-header__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 200px;
-            flex: 0 1 200px;
+    flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-grow: 1;
     text-align: right;
 }
 
 /* BODY CONTENT */
 
 .main-profile {
-    -webkit-transform: translate(0%, 50%);
-        -ms-transform: translate(0%, 50%);
-            transform: translate(0%, 50%);
+    transform: translate(0%, 50%);
 }
 
 .profile__portrait {
@@ -121,31 +109,25 @@ ul {
 
 .profile {
     max-width: 700px;
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
+    align-items: left;
     margin: auto;
     margin-bottom: 35%;
     padding: 50px 50px 100px;
     background-color: #fff;
-    -webkit-box-shadow: 5px 10px 18px #888888;
-            box-shadow: 5px 10px 18px #888888;
+    box-shadow: 5px 10px 18px #888888;
 }
 
 .bio-info {
     text-align: center;
     background-color: #fff;
-    -webkit-box-shadow: 5px 10px 18px #888888;
-            box-shadow: 5px 10px 18px #888888;
+    box-shadow: 5px 10px 18px #888888;
     padding: 10px;
     width: 50%;
     margin: 5% auto;
 }
 
 .project-list {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     padding: 30px;
@@ -154,42 +136,31 @@ ul {
 
 .project-list__item {
     background-color: #f8ecf8;
-    -webkit-box-shadow: 5px 10px 18px #888888;
-            box-shadow: 5px 10px 18px #888888;
+    box-shadow: 5px 10px 18px #888888;
     padding: 10px;
 
 }
 
 .project-list__item:nth-child(2) {
-    -ms-grid-column: 2;
-        grid-column-start: 2; 
-    -ms-grid-column-span: 0; 
+    grid-column-start: 2; 
     grid-column-end: 2;
     /* can be written shorthand like: grid-column 2/2 */
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    -ms-grid-row-span: 3;
+    grid-row-start: 1;
     grid-row-end: 4;
     /* can be written shorthand like: grid-row 1/4 */
 }
 
 
 .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
     margin: 4em 4em;
 }
 
 #contact-form {
     background-color: #f8ecf8;
-    -webkit-box-shadow: 5px 10px 18px #888888;
-            box-shadow: 5px 10px 18px #888888;
+    box-shadow: 5px 10px 18px #888888;
     text-align: center;
     margin-left: 1em;
     margin-right: 1em;
@@ -199,50 +170,25 @@ ul {
 }
 
 input, textarea, label {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin: 0 35%;
 }
 
 
 /* ANIMATIONS */
-@-webkit-keyframes city-spin {
-    from {
-        -webkit-transform: rotate(180deg);
-                transform: rotate(180deg);
-    }
-}
 @keyframes city-spin {
     from {
-        -webkit-transform: rotate(180deg);
-                transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 }
 
 .one-way-sign {
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-name: city-spin;
-            animation-name: city-spin;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: city-spin;
+    animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-timing-function: linear;
 }
-
-@-webkit-keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
-    }
-  }
 
 @keyframes color-change {
     0% {
@@ -257,88 +203,48 @@ input, textarea, label {
   }
 
   .sun {
-    -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-    -webkit-animation-name: color-change;
-            animation-name: color-change;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-  }
-
-  @-webkit-keyframes m-move {
-    from {
-        -webkit-transform: scale(1.1, 1);
-                transform: scale(1.1, 1);
-    }
+    animation-duration: 10s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
 
   @keyframes m-move {
     from {
-        -webkit-transform: scale(1.1, 1);
-                transform: scale(1.1, 1);
+        transform: scale(1.1, 1);
     }
   }
 
   .m-miami {
-    -webkit-animation: 1s m-move infinite alternate linear;
-            animation: 1s m-move infinite alternate linear;
+    animation: 1s m-move infinite alternate linear;
   }
-
-@-webkit-keyframes boat-move {
-    from {
-        -webkit-transform: translate(50px, 0);
-                transform: translate(50px, 0);
-    }
-    to {
-        -webkit-transform: translate(-50px, 0);
-                transform: translate(-50px, 0)
-    }
-}
 
 @keyframes boat-move {
     from {
-        -webkit-transform: translate(50px, 0);
-                transform: translate(50px, 0);
+        transform: translate(50px, 0);
     }
     to {
-        -webkit-transform: translate(-50px, 0);
-                transform: translate(-50px, 0)
+        transform: translate(-50px, 0)
     }
 }
 
 .boat {
-    -webkit-animation: 15s boat-move infinite alternate linear;
-            animation: 15s boat-move infinite alternate linear;
-}
-
-
-
-@-webkit-keyframes cloud-move {
-    from {
-        -webkit-transform: scale(2, 0);
-                transform: scale(2, 0)
-    }
-  
+    animation: 15s boat-move infinite alternate linear;
 }
 
 
 
 @keyframes cloud-move {
     from {
-        -webkit-transform: scale(2, 0);
-                transform: scale(2, 0)
+        transform: scale(2, 0)
     }
   
 }
 
 
 .cloud-front {
-    -webkit-animation: 30s cloud-move infinite alternate linear;
-            animation: 30s cloud-move infinite alternate linear;
+    animation: 30s cloud-move infinite alternate linear;
 }
 
 
@@ -349,43 +255,23 @@ input, textarea, label {
 .where-lived {
     text-align: center;
     background-color: #fff;
-    -webkit-box-shadow: 5px 10px 18px #888888;
-            box-shadow: 5px 10px 18px #888888;
-}
-
-@-webkit-keyframes cloud-move-reverse {
-    from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-    }
-    to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
-    }
-    to {
-        -webkit-transform: scale(2, 1);
-                transform: scale(2, 1);
-    }
+    box-shadow: 5px 10px 18px #888888;
 }
 
 @keyframes cloud-move-reverse {
     from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
+        transform: translate(446px, 48px);
     }
     to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
+        transform: translate(100px, 48px);
     }
     to {
-        -webkit-transform: scale(2, 1);
-                transform: scale(2, 1);
+        transform: scale(2, 1);
     }
 }
 
 .cloud-back {
-    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-            animation: 34s cloud-move-reverse infinite alternate linear;
+    animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 
@@ -402,38 +288,24 @@ input, textarea, label {
 /* FOOTER */
 .page-footer {
     clear: both;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
-    background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     font-weight: bold;
 }
 
 .contact-footer {
     clear: both;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(248, 236, 248, 1)), to(rgba(255, 255, 255, 0)));
-    background-image: -o-linear-gradient(bottom, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0));
     background-image: linear-gradient(to top, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0));
     font-weight: bold;
 }
@@ -453,8 +325,6 @@ input, textarea, label {
     border-radius: 10px;
     /* transition-duration: 0.9s;
     transition-property: opacity; *** CAN BE WRITTEN AS: */ 
-    -webkit-transition: 0.2 opacity; 
-    -o-transition: 0.2 opacity; 
     transition: 0.2 opacity;
 }
 
@@ -470,8 +340,6 @@ input, textarea, label {
     border-radius: 10px;
     /* transition-duration: 0.9s;
     transition-property: opacity; *** CAN BE WRITTEN AS: */ 
-    -webkit-transition: 0.2 opacity; 
-    -o-transition: 0.2 opacity; 
     transition: 0.2 opacity;
 }
 
@@ -485,18 +353,14 @@ input, textarea, label {
 
 #resume-button:active {
     background-color: #2e8540;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-transform: translateZ(4px);
-            transform: translateZ(4px);
+    box-shadow: none;
+    transform: translateZ(4px);
   }
 
 .message-submit-button:active {
     background-color: #2e8540;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-transform: translateZ(4px);
-            transform: translateZ(4px);
+    box-shadow: none;
+    transform: translateZ(4px);
   }
 
 #resume-button {
@@ -512,7 +376,6 @@ input, textarea, label {
 
 @media all and (max-width: 750px) {
     .project-list {
-        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -554,37 +417,6 @@ input, textarea, label {
 2. Build in most og CSS possible beofre adding fun flex and grid. 
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
