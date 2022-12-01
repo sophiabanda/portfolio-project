@@ -46,7 +46,20 @@ body {
     font-variant: small-caps;
     color: var(--primary-text-color) ;
     line-height: 20px;
+    border: solid 2px red;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* values: header, main, footer */
     
+
+}
+
+main {
+    display: grid;
+    place-items: center;
+    border: solid 2px orange;
+    height: auto;
 }
 
 /* To fix the re-sisizing issues of footer vs page
@@ -109,27 +122,29 @@ ul {
 
 /* BODY CONTENT */
 
-.main-profile {
+/* .main-profile {
     transform: translate(0%, 50%);
-}
+} */
 
 .profile__portrait {
     float: left;
     height: 200px;
     border-radius: 50% 50%;  
-    margin: 0 25px 50px 0;
 
 }
 
 
 .profile {
     max-width: 700px;
-    align-items: left;
-    margin: auto;
-    margin-bottom: 35%;
-    padding: 50px 50px 100px;
+    /* align-items: center; */
+    /* margin: auto; */
+    /* margin-bottom: 35%; */
+    padding: 35px;
     background-color: var(--bg-color);
     box-shadow: var(--bx-shdw-5-10-18);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .bio-info {
@@ -264,7 +279,7 @@ input, textarea, label {
 
 
 #where-from {
- width: 70%;
+ width: 500px;
 }
 
 .where-lived {
@@ -301,9 +316,9 @@ input, textarea, label {
     display: flex;
     flex-direction: column;
     text-align: var(--align-center);
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    bottom: 0;
+    /* bottom: 0; */
     background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     font-weight: bold;
 }
@@ -313,9 +328,9 @@ input, textarea, label {
     display: flex;
     flex-direction: column;
     text-align: var(--align-center);
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    bottom: 0;
+    /* bottom: 0; */
     background-image: linear-gradient(to top, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0));
     font-weight: bold;
 }
