@@ -192,16 +192,9 @@ ul {
     background-color: var(--primary-color);
     box-shadow: var(--bx-shdw-5-10-18);
     text-align: var(--align-center);
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 2em;
-    margin-bottom: 2em;
     padding: 2em;
-}
-
-input, textarea, label {
-    align-items: center;
-    margin: 0 35%;
+    display: grid;
+    gap: 8px;
 }
 
 

@@ -95,7 +95,7 @@ ul {
 /* BODY CONTENT */
 
 .main-profile {
-    transform: translate(0%, 50%);
+    /* transform: translate(0%, 50%); */
 }
 
 .profile__portrait {
@@ -155,23 +155,13 @@ ul {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 4em 4em;
 }
 
 #contact-form {
     background-color: #f8ecf8;
     box-shadow: 5px 10px 18px #888888;
     text-align: center;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 2em;
-    margin-bottom: 2em;
     padding: 2em;
-}
-
-input, textarea, label {
-    align-items: center;
-    margin: 0 35%;
 }
 
 
