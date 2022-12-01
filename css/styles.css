@@ -286,6 +286,7 @@ input, textarea, label {
     text-align: var(--align-center);
     background-color: var(--bg-color);
     box-shadow: var(--bx-shdw-5-10-18);
+    width: 80%;
 }
 
 @keyframes cloud-move-reverse {
@@ -405,14 +406,22 @@ input, textarea, label {
 
     .profile__portrait {
         float: none;
-    }    
+    }   
+    
+    article {
+        font-size: 16px;
+    } 
+
+    #here {
+        font-size: 25px;;
+    }
 
     h1 {
         font-size: 22px;
     }
 
     a {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
