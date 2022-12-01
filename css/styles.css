@@ -185,7 +185,11 @@ ul {
     display: flex;
     flex-direction: column;
     text-align: var(--align-center);
-    margin: 4em 4em;
+}
+
+input, textarea {
+    border-radius: 5px;
+    border: solid 2px lightgray;
 }
 
 #contact-form {
