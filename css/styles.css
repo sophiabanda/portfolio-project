@@ -399,7 +399,6 @@ input, textarea, label {
     }
 
     .main-profile {
-        margin: 8%; 
         text-align: var(--align-center);
         font-size: 12px;
     }
