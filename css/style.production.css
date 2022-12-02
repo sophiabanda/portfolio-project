@@ -31,7 +31,18 @@ body {
     font-variant: small-caps;
     color: #28282a;
     line-height: 20px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* values: header, main, footer */
     
+
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: auto;
 }
 
 /* To fix the re-sisizing issues of footer vs page
@@ -94,27 +105,29 @@ ul {
 
 /* BODY CONTENT */
 
-.main-profile {
+/* .main-profile {
     transform: translate(0%, 50%);
-}
+} */
 
 .profile__portrait {
     float: left;
     height: 200px;
     border-radius: 50% 50%;  
-    margin: 0 25px 50px 0;
 
 }
 
 
 .profile {
     max-width: 700px;
-    align-items: left;
-    margin: auto;
-    margin-bottom: 35%;
-    padding: 50px 50px 100px;
+    /* align-items: center; */
+    /* margin: auto; */
+    /* margin-bottom: 35%; */
+    padding: 35px;
     background-color: #fff;
     box-shadow: 5px 10px 18px #888888;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .bio-info {
@@ -146,7 +159,7 @@ ul {
     grid-column-end: 2;
     /* can be written shorthand like: grid-column 2/2 */
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 3;
     /* can be written shorthand like: grid-row 1/4 */
 }
 
@@ -155,23 +168,33 @@ ul {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 4em 4em;
+}
+
+input {
+    border: solid 2px white;
+    margin-bottom: 12px;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea {
+    border: solid 2px white;
+    margin-bottom: 12px;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #contact-form {
     background-color: #f8ecf8;
     box-shadow: 5px 10px 18px #888888;
     text-align: center;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 2em;
-    margin-bottom: 2em;
     padding: 2em;
-}
-
-input, textarea, label {
-    align-items: center;
-    margin: 0 35%;
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+    /* border-radius: 10px; */
 }
 
 
@@ -249,13 +272,14 @@ input, textarea, label {
 
 
 #where-from {
- width: 70%;
+ width: 500px;
 }
 
 .where-lived {
     text-align: center;
     background-color: #fff;
     box-shadow: 5px 10px 18px #888888;
+    width: 90vw;
 }
 
 @keyframes cloud-move-reverse {
@@ -291,10 +315,10 @@ input, textarea, label {
     display: flex;
     flex-direction: column;
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    bottom: 0;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    /* bottom: 0; */
+    /* background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); */
     font-weight: bold;
 }
 
@@ -303,10 +327,10 @@ input, textarea, label {
     display: flex;
     flex-direction: column;
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    bottom: 0;
-    background-image: linear-gradient(to top, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0));
+    /* bottom: 0; */
+    /* background-image: linear-gradient(to top, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0)); */
     font-weight: bold;
 }
 
@@ -322,10 +346,11 @@ input, textarea, label {
     font-variant:small-caps;
     text-decoration: none;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     /* transition-duration: 0.9s;
     transition-property: opacity; *** CAN BE WRITTEN AS: */ 
     transition: 0.2 opacity;
+    box-shadow: 5px 10px 18px #888888;
 }
 
 .message-submit-button {
@@ -337,10 +362,11 @@ input, textarea, label {
     font-variant:small-caps;
     text-decoration: none;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     /* transition-duration: 0.9s;
     transition-property: opacity; *** CAN BE WRITTEN AS: */ 
     transition: 0.2 opacity;
+    box-shadow: 5px 10px 18px #888888;
 }
 
 #resume-button:hover, .resume-button:focus,
@@ -364,7 +390,7 @@ input, textarea, label {
   }
 
 #resume-button {
-    margin: auto;
+    margin: 10px auto;
 }
 
 /* LOGO */
@@ -393,21 +419,28 @@ input, textarea, label {
     }
 
     .main-profile {
-        margin: 8%; 
         text-align: center;
         font-size: 12px;
     }
 
     .profile__portrait {
         float: none;
-    }    
+    }   
+    
+    article {
+        font-size: 16px;
+    } 
+
+    #here {
+        font-size: 16px;;
+    }
 
     h1 {
         font-size: 22px;
     }
 
     a {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -417,18 +450,3 @@ input, textarea, label {
 2. Build in most og CSS possible beofre adding fun flex and grid. 
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
