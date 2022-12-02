@@ -281,7 +281,7 @@ input, textarea {
     text-align: var(--align-center);
     background-color: var(--bg-color);
     box-shadow: var(--bx-shdw-5-10-18);
-    width: 80%;
+    width: 90vw;
 }
 
 @keyframes cloud-move-reverse {
