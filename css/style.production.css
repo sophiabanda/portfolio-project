@@ -141,26 +141,21 @@ ul {
 
 .project-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-gap: 20px;
     padding: 30px;
-    margin-bottom: 10%
+    margin-bottom: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
 }
 
 .project-list__item {
     background-color: #f8ecf8;
     box-shadow: 5px 10px 18px #888888;
     padding: 10px;
-
 }
 
-.project-list__item:nth-child(2) {
-    grid-column-start: 2; 
-    grid-column-end: 2;
-    /* can be written shorthand like: grid-column 2/2 */
-    grid-row-start: 1;
-    grid-row-end: 3;
-    /* can be written shorthand like: grid-row 1/4 */
+.project-list__item:nth-child(3) {
+    grid-row: span 2;
 }
 
 
@@ -279,7 +274,7 @@ textarea {
     text-align: center;
     background-color: #fff;
     box-shadow: 5px 10px 18px #888888;
-    width: 90vw;
+    width: 80%;
 }
 
 @keyframes cloud-move-reverse {
@@ -401,7 +396,7 @@ textarea {
 /* MEDIA SIZING */
 
 @media all and (max-width: 750px) {
-    .project-list {
+    /* .project-list {
         grid-template-columns: 1fr;
     }
 
@@ -412,20 +407,12 @@ textarea {
     .project-list:last-child {
         grid-column: auto/auto;
         grid-row: auto/auto;
-    }
-
-    .project-list__item:nth-child(2) {
-        display: none;
-    }
+    } */
 
     .main-profile {
         text-align: center;
         font-size: 12px;
     }
-
-    .profile__portrait {
-        float: none;
-    }   
     
     article {
         font-size: 16px;
@@ -450,3 +437,18 @@ textarea {
 2. Build in most og CSS possible beofre adding fun flex and grid. 
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
