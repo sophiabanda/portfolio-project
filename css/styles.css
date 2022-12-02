@@ -186,8 +186,11 @@ ul {
 }
 
 input, textarea {
+    border: solid 2px white;
+    margin-bottom: 12px;
+    box-shadow: var(--bx-shdw-5-10-18);
+    padding: 10px;
     border-radius: 5px;
-    border: solid 2px lightgray;
 }
 
 #contact-form {
@@ -196,7 +199,8 @@ input, textarea {
     text-align: var(--align-center);
     padding: 2em;
     display: grid;
-    gap: 8px;
+    gap: 10px;
+    /* border-radius: 10px; */
 }
 
 
@@ -348,6 +352,7 @@ input, textarea {
     /* transition-duration: 0.9s;
     transition-property: opacity; *** CAN BE WRITTEN AS: */ 
     transition: 0.2 opacity;
+    box-shadow: var(--bx-shdw-5-10-18);
 }
 
 #resume-button:hover, .resume-button:focus,
