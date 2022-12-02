@@ -193,6 +193,7 @@ textarea {
     padding: 2em;
     display: grid;
     gap: 10px;
+    margin-top: 20px;
     /* border-radius: 10px; */
 }
 
