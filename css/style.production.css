@@ -412,10 +412,14 @@ textarea {
         grid-row: auto/auto;
     } */
 
+    /* .project-list__item:nth-child(2) {
+        display: none;
+    } */
+
     .main-profile {
         text-align: center;
         font-size: 12px;
-    }
+    } 
     
     article {
         font-size: 16px;
