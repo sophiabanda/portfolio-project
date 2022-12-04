@@ -190,6 +190,7 @@ input, textarea {
 
 #contact-form {
     background-color: var(--primary-color);
+    -webkit-box-shadow: var(--bx-shdw-5-10-18);
     box-shadow: var(--bx-shdw-5-10-18);
     text-align: var(--align-center);
     padding: 2em;
