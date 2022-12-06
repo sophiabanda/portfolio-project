@@ -1,4 +1,5 @@
 {
+  "homepage": "https://sophiabanda.dev",
   "dependencies": {
     "@khanacademy/tota11y": "^0.2.0"
   }
