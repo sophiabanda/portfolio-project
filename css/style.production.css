@@ -61,11 +61,7 @@ main {
 
 a {
     text-decoration: none;
-    color: #09489F;
-}
-
-a:visited {
-    color: #077878;
+    color: #28282a;
 }
 
 a:hover, a:focus {
