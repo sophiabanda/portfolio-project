@@ -159,6 +159,7 @@ ul {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 40rem;
 }
 
 input {
@@ -295,11 +296,13 @@ textarea {
 
 .about-me {
     text-align: center;
+    margin-top: 40rem;
 }
 
 
 .work-page {
     text-align: center;
+    margin-top: 40rem;
 }
 
 
