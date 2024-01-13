@@ -9,7 +9,7 @@ Sacred Heart/Virgen de Gudalupe Stickers: teal: 559893, red: CB1117, orange: F18
 text: 28282a - black
 pink: f8ecf8
 visited teal: 077878
-primary link color: 09489F - blue 
+primary link color: 09489F - blue
 green: 2e8540
 
 */
@@ -22,19 +22,19 @@ green: 2e8540
     --primary-link-color: #09489F;
     --visited-link-color: #077878;
     --active-link-color: #2e8540;
-    
+
     --font-weight-bold: bold;
     --font-weight-primary: 400;
     --align-center: center;
     --bx-shdw-5-10-18: 5px 10px 18px #888888;
 }
 
-/*  TO USE THE ABOVE 
+/*  TO USE THE ABOVE
 Declare variable as value, ex:
 
 a {
     color: var(--primary-color);
-}    
+}
 
 */
 
@@ -50,7 +50,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     /* values: header, main, footer */
-    
+
 
 }
 
@@ -72,7 +72,7 @@ main {
 
 * {
     box-sizing: border-box;
-} 
+}
 
 a {
     text-decoration: none;
@@ -94,7 +94,7 @@ a:active {
 
 ul {
     list-style-type: none;
-} 
+}
 
 /* HEADER */
 
@@ -127,7 +127,7 @@ ul {
 .profile__portrait {
     float: left;
     height: 200px;
-    border-radius: 50% 50%;  
+    border-radius: 50% 50%;
 
 }
 
@@ -266,7 +266,7 @@ input, textarea {
     from {
         transform: scale(2, 0)
     }
-  
+
 }
 
 
@@ -348,7 +348,7 @@ input, textarea {
     padding: 10px;
     border-radius: 5px;
     /* transition-duration: 0.9s;
-    transition-property: opacity; *** CAN BE WRITTEN AS: */ 
+    transition-property: opacity; *** CAN BE WRITTEN AS: */
     transition: 0.2 opacity;
     box-shadow: var(--bx-shdw-5-10-18);
 }
@@ -357,7 +357,7 @@ input, textarea {
 .message-submit-button:hover, .message-submit-button:focus {
     cursor: pointer;
     opacity: 0.8;
- 
+
     /* box-shadow: 12px 12px 2px 1px rgba(232, 157, 232, 0.2); */
 }
 
@@ -387,7 +387,7 @@ input, textarea {
     .project-list {
         grid-gap: 10px;
     }
-    
+
     .project-list:last-child {
         grid-column: auto/auto;
         grid-row: auto/auto;
@@ -400,11 +400,11 @@ input, textarea {
     .main-profile {
         text-align: var(--align-center);
         font-size: 12px;
-    } 
-    
+    }
+
     article {
         font-size: 16px;
-    } 
+    }
 
     #here {
         font-size: 16px;;
@@ -422,7 +422,7 @@ input, textarea {
 /* In the future!! :
 
 1. Design for the smallest screen first, and
-2. Build in most og CSS possible beofre adding fun flex and grid. 
+2. Build in most og CSS possible beofre adding fun flex and grid.
 
 */
 
