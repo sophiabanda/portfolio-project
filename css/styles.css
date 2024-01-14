@@ -15,18 +15,18 @@ green: 2e8540
 */
 
 :root {
-    --primary-color: #f8ecf8;
-    --bg-color: #fff;
-    --primary-text-color: #28282a;
+  --primary-color: #f8ecf8;
+  --bg-color: #fff;
+  --primary-text-color: #28282a;
 
-    --primary-link-color: #09489F;
-    --visited-link-color: #077878;
-    --active-link-color: #2e8540;
+  --primary-link-color: #09489f;
+  --visited-link-color: #077878;
+  --active-link-color: #2e8540;
 
-    --font-weight-bold: bold;
-    --font-weight-primary: 400;
-    --align-center: center;
-    --bx-shdw-5-10-18: 5px 10px 18px #888888;
+  --font-weight-bold: bold;
+  --font-weight-primary: 400;
+  --align-center: center;
+  --bx-shdw-5-10-18: 5px 10px 18px #888888;
 }
 
 /*  TO USE THE ABOVE
@@ -39,25 +39,23 @@ a {
 */
 
 body {
-    background-color: var(--bg-color) ;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-variant: small-caps;
-    color: var(--primary-text-color) ;
-    line-height: 20px;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    /* values: header, main, footer */
-
-
+  background-color: var(--bg-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-variant: small-caps;
+  color: var(--primary-text-color);
+  line-height: 20px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* values: header, main, footer */
 }
 
 main {
-    display: grid;
-    place-items: center;
-    height: auto;
+  display: grid;
+  place-items: center;
+  height: auto;
 }
 
 /* To fix the re-sisizing issues of footer vs page
@@ -69,53 +67,53 @@ main {
     padding-bottom: 2.5rem;
 } */
 
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: var(--primary-link-color);
+  text-decoration: none;
+  color: var(--primary-link-color);
 }
 
 a:visited {
-    color: var(--visited-link-color);
+  color: var(--visited-link-color);
 }
 
-a:hover, a:focus {
-    text-decoration: none;
-    cursor: pointer;
+a:hover,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 a:active {
-    color: var(--active-link-color);
+  color: var(--active-link-color);
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* HEADER */
 
 .page-header {
-    display: flex;
-    width: 100%;
-    padding: 20px;
+  display: flex;
+  width: 100%;
+  padding: 20px;
 }
 
 .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+  display: inline-block;
+  margin-left: 15px;
 }
 
 .page-header__item {
-    flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
+  flex-grow: 1;
+  text-align: right;
 }
 
 /* BODY CONTENT */
@@ -125,262 +123,254 @@ ul {
 } */
 
 .profile__portrait {
-    float: left;
-    height: 200px;
-    border-radius: 50% 50%;
-
+  float: left;
+  height: 200px;
+  border-radius: 50% 50%;
 }
 
-
 .profile {
-    max-width: 700px;
-    /* align-items: center; */
-    /* margin: auto; */
-    /* margin-bottom: 35%; */
-    padding: 35px;
-    background-color: var(--bg-color);
-    box-shadow: var(--bx-shdw-5-10-18);
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  max-width: 700px;
+  /* align-items: center; */
+  /* margin: auto; */
+  /* margin-bottom: 35%; */
+  padding: 35px;
+  background-color: var(--bg-color);
+  box-shadow: var(--bx-shdw-5-10-18);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .bio-info {
-    text-align: var(--align-center);
-    background-color: var(--bg-color);
-    box-shadow: var(--bx-shdw-5-10-18);
-    padding: 10px;
-    width: 50%;
-    margin: 5% auto;
+  text-align: var(--align-center);
+  background-color: var(--bg-color);
+  box-shadow: var(--bx-shdw-5-10-18);
+  padding: 10px;
+  width: 50%;
+  margin: 5% auto;
 }
 
 .project-list {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-gap: 20px;
-    padding: 30px;
-    margin-bottom: 10%;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-gap: 20px;
+  padding: 30px;
+  margin-bottom: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
 }
 
 .project-list__item {
-    background-color: #f8ecf8;
-    box-shadow: 5px 10px 18px #888888;
-    padding: 10px;
+  background-color: #f8ecf8;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 10px;
 }
 
 .project-list__item:nth-child(3) {
-    grid-row: span 2;
+  grid-row: span 2;
 }
-
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    text-align: var(--align-center);
+  display: flex;
+  flex-direction: column;
+  text-align: var(--align-center);
 }
 
-input, textarea {
-    border: solid 2px white;
-    margin-bottom: 12px;
-    -webkit-appearance: none;
-    box-shadow: var(--bx-shdw-5-10-18);
-    padding: 10px;
-    border-radius: 5px;
+input,
+textarea {
+  border: solid 2px white;
+  margin-bottom: 12px;
+  -webkit-appearance: none;
+  box-shadow: var(--bx-shdw-5-10-18);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 #contact-form {
-    background-color: var(--primary-color);
-    -webkit-appearance: none;
-    box-shadow: var(--bx-shdw-5-10-18);
-    text-align: var(--align-center);
-    padding: 2em;
-    display: grid;
-    gap: 10px;
-    margin-top: 20px;
-    /* border-radius: 10px; */
+  background-color: var(--primary-color);
+  -webkit-appearance: none;
+  box-shadow: var(--bx-shdw-5-10-18);
+  text-align: var(--align-center);
+  padding: 2em;
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  /* border-radius: 10px; */
 }
-
 
 /* ANIMATIONS */
 @keyframes city-spin {
-    from {
-        transform: rotate(180deg);
-    }
+  from {
+    transform: rotate(180deg);
+  }
 }
 
 .one-way-sign {
-    animation-duration: 2s;
-    animation-name: city-spin;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-name: city-spin;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
 }
 
 @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
-    }
+  0% {
+    fill: #edc655;
   }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
 
-  .sun {
-    animation-duration: 10s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
+.sun {
+  animation-duration: 10s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 
-  @keyframes m-move {
-    from {
-        transform: scale(1.1, 1);
-    }
+@keyframes m-move {
+  from {
+    transform: scale(1.1, 1);
   }
+}
 
-  .m-miami {
-    animation: 1s m-move infinite alternate linear;
-  }
+.m-miami {
+  animation: 1s m-move infinite alternate linear;
+}
 
 @keyframes boat-move {
-    from {
-        transform: translate(50px, 0);
-    }
-    to {
-        transform: translate(-50px, 0)
-    }
+  from {
+    transform: translate(50px, 0);
+  }
+  to {
+    transform: translate(-50px, 0);
+  }
 }
 
 .boat {
-    animation: 15s boat-move infinite alternate linear;
+  animation: 15s boat-move infinite alternate linear;
 }
-
-
 
 @keyframes cloud-move {
-    from {
-        transform: scale(2, 0)
-    }
-
+  from {
+    transform: scale(2, 0);
+  }
 }
-
 
 .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
-
 #where-from {
- width: 500px;
+  width: 500px;
 }
 
 .where-lived {
-    text-align: var(--align-center);
-    background-color: var(--bg-color);
-    box-shadow: var(--bx-shdw-5-10-18);
-    width: 90vw;
+  text-align: var(--align-center);
+  background-color: var(--bg-color);
+  box-shadow: var(--bx-shdw-5-10-18);
+  width: 90vw;
 }
 
 @keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px, 48px);
-    }
-    to {
-        transform: scale(2, 1);
-    }
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+  to {
+    transform: scale(2, 1);
+  }
 }
 
 .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-
-.about-me, .work-page {
-    text-align: var(--align-center) ;
+.about-me,
+.work-page {
+  text-align: var(--align-center);
 }
-
 
 /* FOOTER */
 .page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: var(--align-center);
-    /* position: fixed; */
-    width: 100%;
-    /* bottom: 0; */
-    /* background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); */
-    font-weight: bold;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: var(--align-center);
+  /* position: fixed; */
+  width: 100%;
+  /* bottom: 0; */
+  /* background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); */
+  font-weight: bold;
 }
 
 .contact-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: var(--align-center);
-    /* position: fixed; */
-    width: 100%;
-    /* bottom: 0; */
-    /* background-image: linear-gradient(to top, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0)); */
-    font-weight: bold;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: var(--align-center);
+  /* position: fixed; */
+  width: 100%;
+  /* bottom: 0; */
+  /* background-image: linear-gradient(to top, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0)); */
+  font-weight: bold;
 }
-
 
 /* BUTTONS */
 
 #resume-button,
 .message-submit-button {
-    border: none;
-    font-family: inherit;
-    background-color: var(--primary-link-color);
-    color: white;
-    /* When I try to use a variable for color above, it's overriden by the black text of the body block */
-    font-variant:small-caps;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    /* transition-duration: 0.9s;
+  border: none;
+  font-family: inherit;
+  background-color: var(--primary-link-color);
+  color: white;
+  /* When I try to use a variable for color above, it's overriden by the black text of the body block */
+  font-variant: small-caps;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  /* transition-duration: 0.9s;
     transition-property: opacity; *** CAN BE WRITTEN AS: */
-    transition: 0.2 opacity;
-    box-shadow: var(--bx-shdw-5-10-18);
+  transition: 0.2 opacity;
+  box-shadow: var(--bx-shdw-5-10-18);
 }
 
-#resume-button:hover, .resume-button:focus,
-.message-submit-button:hover, .message-submit-button:focus {
-    cursor: pointer;
-    opacity: 0.8;
+#resume-button:hover,
+.resume-button:focus,
+.message-submit-button:hover,
+.message-submit-button:focus {
+  cursor: pointer;
+  opacity: 0.8;
 
-    /* box-shadow: 12px 12px 2px 1px rgba(232, 157, 232, 0.2); */
+  /* box-shadow: 12px 12px 2px 1px rgba(232, 157, 232, 0.2); */
 }
 
 #resume-button:active,
 .message-submit-button:active {
-    background-color: var(--active-link-color);
-    box-shadow: none;
-    transform: translateZ(4px);
-  }
+  background-color: var(--active-link-color);
+  box-shadow: none;
+  transform: translateZ(4px);
+}
 
 #resume-button {
-    margin: 10px auto;
+  margin: 10px auto;
 }
 
 /* LOGO */
 #logo {
-    height: 80px;
+  height: 80px;
 }
 
 /* MEDIA SIZING */
 
 @media all and (max-width: 750px) {
-    /* .project-list {
+  /* .project-list {
         grid-template-columns: 1fr;
     }
 
@@ -393,30 +383,30 @@ input, textarea {
         grid-row: auto/auto;
     } */
 
-    /* .project-list__item:nth-child(2) {
+  /* .project-list__item:nth-child(2) {
         display: none;
     } */
 
-    .main-profile {
-        text-align: var(--align-center);
-        font-size: 12px;
-    }
+  .main-profile {
+    text-align: var(--align-center);
+    font-size: 12px;
+  }
 
-    article {
-        font-size: 16px;
-    }
+  article {
+    font-size: 16px;
+  }
 
-    #here {
-        font-size: 16px;;
-    }
+  #here {
+    font-size: 16px;
+  }
 
-    h1 {
-        font-size: 22px;
-    }
+  h1 {
+    font-size: 22px;
+  }
 
-    a {
-        font-size: 14px;
-    }
+  a {
+    font-size: 14px;
+  }
 }
 
 /* In the future!! :
@@ -425,18 +415,3 @@ input, textarea {
 2. Build in most og CSS possible beofre adding fun flex and grid.
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

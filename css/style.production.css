@@ -9,40 +9,38 @@ Sacred Heart/Virgen de Gudalupe Stickers: teal: 559893, red: CB1117, orange: F18
 text: 28282a - black
 pink: f8ecf8
 visited teal: 077878
-primary link color: 09489F - blue 
+primary link color: 09489F - blue
 green: 2e8540
 
 */
 
-/*  TO USE THE ABOVE 
+/*  TO USE THE ABOVE
 Declare variable as value, ex:
 
 a {
     color: var(--primary-color);
-}    
+}
 
 */
 
 body {
-    background-color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-variant: small-caps;
-    color: #28282a;
-    line-height: 20px;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    /* values: header, main, footer */
-    
-
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-variant: small-caps;
+  color: #28282a;
+  line-height: 20px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* values: header, main, footer */
 }
 
 main {
-    display: grid;
-    place-items: center;
-    height: auto;
+  display: grid;
+  place-items: center;
+  height: auto;
 }
 
 /* To fix the re-sisizing issues of footer vs page
@@ -54,49 +52,49 @@ main {
     padding-bottom: 2.5rem;
 } */
 
-
 * {
-    box-sizing: border-box;
-} 
-
-a {
-    text-decoration: none;
-    color: #28282a;
+  box-sizing: border-box;
 }
 
-a:hover, a:focus {
-    text-decoration: none;
-    cursor: pointer;
+a {
+  text-decoration: none;
+  color: #28282a;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 a:active {
-    color: #2e8540;
+  color: #2e8540;
 }
 
 ul {
-    list-style-type: none;
-} 
+  list-style-type: none;
+}
 
 /* HEADER */
 
 .page-header {
-    display: flex;
-    width: 100%;
-    padding: 20px;
+  display: flex;
+  width: 100%;
+  padding: 20px;
 }
 
 .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+  display: inline-block;
+  margin-left: 15px;
 }
 
 .page-header__item {
-    flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
+  flex-grow: 1;
+  text-align: right;
 }
 
 /* BODY CONTENT */
@@ -106,352 +104,330 @@ ul {
 } */
 
 .profile__portrait {
-    float: left;
-    height: 200px;
-    border-radius: 50% 50%;  
-
+  float: left;
+  height: 200px;
+  border-radius: 50% 50%;
 }
 
-
 .profile {
-    max-width: 700px;
-    /* align-items: center; */
-    /* margin: auto; */
-    /* margin-bottom: 35%; */
-    padding: 35px;
-    background-color: #fff;
-    box-shadow: 5px 10px 18px #888888;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  max-width: 700px;
+  /* align-items: center; */
+  /* margin: auto; */
+  /* margin-bottom: 35%; */
+  padding: 35px;
+  background-color: #fff;
+  box-shadow: 5px 10px 18px #888888;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .bio-info {
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 5px 10px 18px #888888;
-    padding: 10px;
-    width: 50%;
-    margin: 2% auto;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 10px;
+  width: 50%;
+  margin: 2% auto;
 }
 
 .project-list {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-gap: 20px;
-    padding: 30px;
-    margin-bottom: 10%;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-gap: 20px;
+  padding: 30px;
+  margin-bottom: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
 }
 
 .project-list__item {
-    background-color: #f8ecf8;
-    box-shadow: 5px 10px 18px #888888;
-    padding: 10px;
+  background-color: #f8ecf8;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 10px;
 }
 
 .project-list__item:nth-child(3) {
-    grid-row: span 2;
+  grid-row: span 2;
 }
 
-
 .contact {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.letsmeetpng {
+  height: 15vh;
 }
 
 input {
-    border: solid 2px white;
-    margin-bottom: 12px;
-    -webkit-appearance: none;
-    box-shadow: 5px 10px 18px #888888;
-    padding: 10px;
-    border-radius: 5px;
+  border: solid 2px white;
+  margin-bottom: 12px;
+  -webkit-appearance: none;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 textarea {
-    border: solid 2px white;
-    margin-bottom: 12px;
-    -webkit-appearance: none;
-    box-shadow: 5px 10px 18px #888888;
-    padding: 10px;
-    border-radius: 5px;
+  border: solid 2px white;
+  margin-bottom: 12px;
+  -webkit-appearance: none;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 #contact-form {
-    background-color: #f8ecf8;
-    -webkit-appearance: none;
-    box-shadow: 5px 10px 18px #888888;
-    text-align: center;
-    padding: 2em;
-    display: grid;
-    gap: 10px;
-    margin-top: 20px;
-    /* border-radius: 10px; */
+  background-color: #f8ecf8;
+  -webkit-appearance: none;
+  box-shadow: 5px 10px 18px #888888;
+  text-align: center;
+  padding: 2em;
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  /* border-radius: 10px; */
 }
-
 
 /* ANIMATIONS */
 @keyframes city-spin {
-    from {
-        transform: rotate(180deg);
-    }
+  from {
+    transform: rotate(180deg);
+  }
 }
 
 .one-way-sign {
-    animation-duration: 2s;
-    animation-name: city-spin;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-name: city-spin;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
 }
 
 @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
-    }
+  0% {
+    fill: #edc655;
   }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
 
-  .sun {
-    animation-duration: 10s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
+.sun {
+  animation-duration: 10s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 
-  @keyframes m-move {
-    from {
-        transform: scale(1.1, 1);
-    }
+@keyframes m-move {
+  from {
+    transform: scale(1.1, 1);
   }
+}
 
-  .m-miami {
-    animation: 1s m-move infinite alternate linear;
-  }
+.m-miami {
+  animation: 1s m-move infinite alternate linear;
+}
 
 @keyframes boat-move {
-    from {
-        transform: translate(50px, 0);
-    }
-    to {
-        transform: translate(-50px, 0)
-    }
+  from {
+    transform: translate(50px, 0);
+  }
+  to {
+    transform: translate(-50px, 0);
+  }
 }
 
 .boat {
-    animation: 15s boat-move infinite alternate linear;
+  animation: 15s boat-move infinite alternate linear;
 }
-
-
 
 @keyframes cloud-move {
-    from {
-        transform: scale(2, 0)
-    }
-  
+  from {
+    transform: scale(2, 0);
+  }
 }
-
 
 .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
-
 #where-from {
- width: 500px;
+  width: 500px;
 }
 
 .where-lived {
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 5px 10px 18px #888888;
-    width: 90vw;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 5px 10px 18px #888888;
+  width: 90vw;
 }
 
 @keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px, 48px);
-    }
-    to {
-        transform: scale(2, 1);
-    }
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+  to {
+    transform: scale(2, 1);
+  }
 }
 
 .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
-
 
 .about-me {
-    text-align: center;
+  text-align: center;
 }
-
 
 .work-page {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* FOOTER */
 .page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    /* position: fixed; */
-    width: 100%;
-    /* bottom: 0; */
-    /* background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); */
-    font-weight: bold;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* position: fixed; */
+  width: 100%;
+  /* bottom: 0; */
+  /* background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); */
+  font-weight: bold;
 }
 
 .contact-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    /* position: fixed; */
-    width: 100%;
-    /* bottom: 0; */
-    /* background-image: linear-gradient(to top, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0)); */
-    font-weight: bold;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* position: fixed; */
+  width: 100%;
+  /* bottom: 0; */
+  /* background-image: linear-gradient(to top, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0)); */
+  font-weight: bold;
 }
-
 
 /* BUTTONS */
 
 #resume-button {
-    border: none;
-    font-family: inherit;
-    background-color: #09489F;
-    color: white;
-    /* When I try to use a variable for color above, it's overriden by the black text of the body block */
-    font-variant:small-caps;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    /* transition-duration: 0.9s;
-    transition-property: opacity; *** CAN BE WRITTEN AS: */ 
-    transition: 0.2 opacity;
-    box-shadow: 5px 10px 18px #888888;
+  border: none;
+  font-family: inherit;
+  background-color: #09489f;
+  color: white;
+  /* When I try to use a variable for color above, it's overriden by the black text of the body block */
+  font-variant: small-caps;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  /* transition-duration: 0.9s;
+    transition-property: opacity; *** CAN BE WRITTEN AS: */
+  transition: 0.2 opacity;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 .message-submit-button {
-    border: none;
-    font-family: inherit;
-    background-color: #09489F;
-    color: white;
-    /* When I try to use a variable for color above, it's overriden by the black text of the body block */
-    font-variant:small-caps;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    /* transition-duration: 0.9s;
-    transition-property: opacity; *** CAN BE WRITTEN AS: */ 
-    transition: 0.2 opacity;
-    box-shadow: 5px 10px 18px #888888;
+  border: none;
+  font-family: inherit;
+  background-color: #09489f;
+  color: white;
+  /* When I try to use a variable for color above, it's overriden by the black text of the body block */
+  font-variant: small-caps;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  /* transition-duration: 0.9s;
+    transition-property: opacity; *** CAN BE WRITTEN AS: */
+  transition: 0.2 opacity;
+  box-shadow: 5px 10px 18px #888888;
 }
 
-#resume-button:hover, .resume-button:focus,
-.message-submit-button:hover, .message-submit-button:focus {
-    cursor: pointer;
-    opacity: 0.8;
- 
-    /* box-shadow: 12px 12px 2px 1px rgba(232, 157, 232, 0.2); */
+#resume-button:hover,
+.resume-button:focus,
+.message-submit-button:hover,
+.message-submit-button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+
+  /* box-shadow: 12px 12px 2px 1px rgba(232, 157, 232, 0.2); */
 }
 
 #resume-button:active {
-    background-color: #2e8540;
-    box-shadow: none;
-    transform: translateZ(4px);
-  }
+  background-color: #2e8540;
+  box-shadow: none;
+  transform: translateZ(4px);
+}
 
 .message-submit-button:active {
-    background-color: #2e8540;
-    box-shadow: none;
-    transform: translateZ(4px);
-  }
+  background-color: #2e8540;
+  box-shadow: none;
+  transform: translateZ(4px);
+}
 
 #resume-button {
-    margin: 10px auto;
+  margin: 10px auto;
 }
 
 /* LOGO */
 #logo {
-    height: 80px;
+  height: 80px;
 }
 
 /* MEDIA SIZING */
 
 @media all and (max-width: 750px) {
-    /* .project-list {
+  /* .project-list {
         grid-template-columns: 1fr;
     }
 
     .project-list {
         grid-gap: 10px;
     }
-    
+
     .project-list:last-child {
         grid-column: auto/auto;
         grid-row: auto/auto;
     } */
 
-    /* .project-list__item:nth-child(2) {
+  /* .project-list__item:nth-child(2) {
         display: none;
     } */
 
-    .main-profile {
-        text-align: center;
-        font-size: 12px;
-    } 
-    
-    article {
-        font-size: 16px;
-    } 
+  .main-profile {
+    text-align: center;
+    font-size: 12px;
+  }
 
-    #here {
-        font-size: 16px;;
-    }
+  article {
+    font-size: 16px;
+  }
 
-    h1 {
-        font-size: 22px;
-    }
+  #here {
+    font-size: 16px;
+  }
 
-    a {
-        font-size: 14px;
-    }
+  h1 {
+    font-size: 22px;
+  }
+
+  a {
+    font-size: 14px;
+  }
 }
 
 /* In the future!! :
 
 1. Design for the smallest screen first, and
-2. Build in most og CSS possible beofre adding fun flex and grid. 
+2. Build in most og CSS possible beofre adding fun flex and grid.
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
