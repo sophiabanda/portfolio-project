@@ -40,7 +40,7 @@ a {
 
 body {
   background-color: var(--bg-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-variant: small-caps;
@@ -49,7 +49,6 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  /* values: header, main, footer */
 }
 
 main {
@@ -57,15 +56,6 @@ main {
   place-items: center;
   height: auto;
 }
-
-/* To fix the re-sisizing issues of footer vs page
-#index-html, #about-html, #contact-html, #work-html {
-    position: absolute;
-    min-height: 100vh;
-}
-#profile, #about-me, #project-list, #contact {
-    padding-bottom: 2.5rem;
-} */
 
 * {
   box-sizing: border-box;
@@ -116,12 +106,6 @@ ul {
   text-align: right;
 }
 
-/* BODY CONTENT */
-
-/* .main-profile {
-    transform: translate(0%, 50%);
-} */
-
 .profile__portrait {
   float: left;
   height: 200px;
@@ -152,7 +136,6 @@ ul {
 
 .project-list {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-gap: 20px;
   padding: 30px;
   margin-bottom: 10%;
@@ -194,7 +177,6 @@ textarea {
   display: grid;
   gap: 10px;
   margin-top: 20px;
-  /* border-radius: 10px; */
 }
 
 /* ANIMATIONS */
@@ -303,10 +285,7 @@ textarea {
   display: flex;
   flex-direction: column;
   text-align: var(--align-center);
-  /* position: fixed; */
   width: 100%;
-  /* bottom: 0; */
-  /* background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); */
   font-weight: bold;
 }
 
@@ -315,10 +294,7 @@ textarea {
   display: flex;
   flex-direction: column;
   text-align: var(--align-center);
-  /* position: fixed; */
   width: 100%;
-  /* bottom: 0; */
-  /* background-image: linear-gradient(to top, rgba(248, 236, 248, 1), rgba(255, 255, 255, 0)); */
   font-weight: bold;
 }
 
@@ -330,7 +306,6 @@ textarea {
   font-family: inherit;
   background-color: var(--primary-link-color);
   color: white;
-  /* When I try to use a variable for color above, it's overriden by the black text of the body block */
   font-variant: small-caps;
   text-decoration: none;
   padding: 10px;
@@ -347,8 +322,6 @@ textarea {
 .message-submit-button:focus {
   cursor: pointer;
   opacity: 0.8;
-
-  /* box-shadow: 12px 12px 2px 1px rgba(232, 157, 232, 0.2); */
 }
 
 #resume-button:active,
@@ -370,22 +343,22 @@ textarea {
 /* MEDIA SIZING */
 
 @media all and (max-width: 750px) {
-  /* .project-list {
-        grid-template-columns: 1fr;
-    }
+  .project-list {
+    grid-template-columns: 1fr;
+  }
 
-    .project-list {
-        grid-gap: 10px;
-    }
+  .project-list {
+    grid-gap: 10px;
+  }
 
-    .project-list:last-child {
-        grid-column: auto/auto;
-        grid-row: auto/auto;
-    } */
+  .project-list:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
 
-  /* .project-list__item:nth-child(2) {
-        display: none;
-    } */
+  .project-list__item:nth-child(2) {
+    display: none;
+  }
 
   .main-profile {
     text-align: var(--align-center);
@@ -408,10 +381,3 @@ textarea {
     font-size: 14px;
   }
 }
-
-/* In the future!! :
-
-1. Design for the smallest screen first, and
-2. Build in most og CSS possible beofre adding fun flex and grid.
-
-*/
